@@ -12,7 +12,7 @@ body {
     background: linear-gradient(135deg, rgba(98, 142, 117, 1) 0.66%, rgba(26, 72, 85, 1) 83.32%);
     box-shadow: 26px 24px 90px 0px rgba(31, 26, 51, 0.13);
     width: 100vw auto;
-    height: 100vh auto;
+    height: 100vh;
 }
 
 header {
