@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+* {
+    font-style: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(98, 142, 117, 1) 0.66%, rgba(26, 72, 85, 1) 83.32%);
+    box-shadow: 26px 24px 90px 0px rgba(31, 26, 51, 0.13);
+    width: 100vw auto;
+    height: 100vh auto;
+}
+
+header {
+    padding-top: 45px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50vw;
+}
+
+header div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 24px;
+}
+
+main {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.content {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 410px;
+    row-gap: 20px;
+}
+
+.content h2 {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.content h1 {
+    font-size: 4.3rem;
+    font-style: normal;
+    font-weight: 900;
+    width: 100% auto;
+    line-height: 109%;
+}
+
+.content p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 180%;
+    width: 410px;
+}
+
+main img {
+    width: 600px;
+}
+
+.content div {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 20px;
+}
+
+.btn > p {
+    transform: skew(25deg);
+    font-weight: 300;
+    width: 200px;
+}
+
+.bi {
+    transform: skew(25deg);
+}
+
+.btn {
+    background-color: #658E76;
+    font-size: 24px;
+    border: none;
+    /*responsável por inclinar o botão*/
+    transform: skew(-24deg);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: #658E76 2px solid;
+}
+
+.btn:hover {
+    background-color: #658E76;
+    cursor: pointer;
+}
