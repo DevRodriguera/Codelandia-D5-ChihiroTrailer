@@ -6,23 +6,34 @@
     padding: 0;
     margin: 0;
     color: white;
+    /* border: black solid; */
 }
 
 body {
     background: linear-gradient(135deg, rgba(98, 142, 117, 1) 0.66%, rgba(26, 72, 85, 1) 83.32%);
-    box-shadow: 26px 24px 90px 0px rgba(31, 26, 51, 0.13);
-    width: 100vw auto;
-    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 100px 0px;
 }
 
 header {
-    padding-top: 45px;
-    padding-bottom: 150px;
+    margin-top: 45px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
-    column-gap: 50vw;
+    justify-content: space-between;
+    width: 85vw;
+}
+
+main {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    width: 85vw;
+    margin-bottom: 100%;
 }
 
 header div {
@@ -34,19 +45,10 @@ header div {
     height: 24px;
 }
 
-main {
-    display: flex;
-    flex-flow: row-reverse wrap;
-    align-items: center;
-    justify-content: center;
-    column-gap: 50px;
-}
-
 .content {
     display: flex;
     flex-flow: column wrap;
-    max-width: 410px;
-    row-gap: 20px;
+    width: 440px;
 }
 
 .content h2 {
@@ -59,11 +61,12 @@ main {
 }
 
 .content h1 {
+    word-break: break-word;
     font-size: 4.3rem;
     font-style: normal;
     font-weight: 900;
-    width: 100% auto;
     line-height: 109%;
+    width: 100%;
 }
 
 .content p {
@@ -75,7 +78,7 @@ main {
 }
 
 main img {
-    width: 600px;
+    width: 41vw;
 }
 
 .content div {
@@ -110,4 +113,37 @@ main img {
 .btn:hover {
     background-color: #658E76;
     cursor: pointer;
+}
+
+@media screen and (max-width:1049px) {
+    
+    main {
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    main img {
+        width: 60vw ;
+    }
+
+    .content {
+        width: 350px;
+    }
+
+    .content h2 {
+        font-size: 1rem;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+    }
+
+    .content p {
+        word-break: break-word;
+        width: 350px;
+    }
+
+    #trailer {
+        display: none;
+    }
 }
